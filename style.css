@@ -32,6 +32,36 @@ body {
   padding: 30px 16px;
 }
 
+.nav-link {
+  padding: 4px 8px;
+  color: darkgreen;
+}
+
+.nav-link:hover {
+  background-color: coral;
+}
+
+.nav-link:active {
+  color: white;
+  background-color: red;
+}
+
+.nav-link + .nav-link {
+  margin-left: 16px;
+}
+
 .main {
   padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
 }
