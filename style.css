@@ -23,6 +23,11 @@ body {
   margin: 0px;
 }
 
+::selection {
+  color: blue;
+  background-color: yellow;
+}
+
 /* specific stylings */
 /*text-align: center;*/
 
@@ -30,6 +35,10 @@ body {
   text-align: center;
   background-color: floralwhite;
   padding: 30px 16px;
+}
+
+.profession::after {
+  content: " 👨‍💻";
 }
 
 .nav-link {
