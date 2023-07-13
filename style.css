@@ -74,3 +74,11 @@ body {
 .main > *:first-child {
   border-top: none;
 }
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+}
