@@ -33,12 +33,24 @@ body {
 
 .header {
   text-align: center;
-  background-color: floralwhite;
   padding: 30px 16px;
+  padding-top: 72px;
+  background-color: floralwhite;
+  position: relative;
 }
 
 .profession::after {
   content: " 👨‍💻";
+}
+
+.hire-me {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: salmon;
+  color: black;
 }
 
 .nav-link {
@@ -73,6 +85,11 @@ body {
 
 .main > *:first-child {
   border-top: none;
+}
+
+.article-heading {
+  position: relative;
+  left: -10px;
 }
 
 .experience-heading {
