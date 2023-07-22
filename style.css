@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  /* font-size: 20px; */
 }
 
 h1,
@@ -20,7 +21,7 @@ h6 {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 ::selection {
@@ -33,10 +34,22 @@ body {
 
 .header {
   text-align: center;
-  padding: 30px 16px;
-  padding-top: 72px;
+  padding: 3rem 1rem;
+  padding-top: 4rem;
   background-color: floralwhite;
   position: relative;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.profession {
+  font-size: 0.25em;
 }
 
 .profession::after {
@@ -45,16 +58,16 @@ body {
 
 .hire-me {
   position: absolute;
-  right: 15px;
-  top: 15px;
-  padding: 8px;
-  border-radius: 4px;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   background-color: salmon;
   color: black;
 }
 
 .nav-link {
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   color: darkgreen;
 }
 
@@ -68,19 +81,21 @@ body {
 }
 
 .nav-link + .nav-link {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .main {
-  padding: 16px;
+  padding: 1rem;
+  max-width: 60ch;
 }
 
 .main > * + * {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .main > * {
-  border-top: 2px solid grey;
+  border-top: 0.125rem solid grey;
+  padding: 0 1rem;
 }
 
 .main > *:first-child {
@@ -89,7 +104,7 @@ body {
 
 .article-heading {
   position: relative;
-  left: -10px;
+  left: -1rem;
 }
 
 .experience-heading {
