@@ -33,12 +33,20 @@ h6 {
 }
 
 body {
+  --background-color: white;
+  --text-color: black;
+  --accent-color: plum;
+  --accent-text-color: black;
+  --nav-link-active-bg-color: violet;
+
   margin: 0;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ::selection {
-  color: blue;
-  background-color: yellow;
+  background-color: var(--accent-color);
 }
 
 /* specific stylings */
@@ -48,8 +56,11 @@ body {
   text-align: center;
   padding: 3rem 1rem;
   padding-top: 4rem;
-  background-color: floralwhite;
-  background-image: linear-gradient(white, floralwhite);
+  background-color: var(--accent-color);
+  background-image: linear-gradient(
+    var(--background-color),
+    var(--accent-color)
+  );
   position: relative;
 }
 
@@ -75,8 +86,14 @@ body {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: salmon;
-  color: black;
+  background-color: var(--accent-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-color: black;
+    --text-color: white;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -110,16 +127,21 @@ body {
 
 .nav-link {
   padding: 0.25rem 0.5rem;
-  color: darkgreen;
+  color: var(--accent-text-color);
 }
 
 .nav-link:hover {
-  background-color: coral;
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 
 .nav-link:active {
-  color: white;
-  background-color: red;
+  color: var(--accent-text-color);
+  background-color: var(--nav-link-active-bg-color);
+}
+
+.nav-link:visited {
+  color: var(--accent-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -144,7 +166,7 @@ body {
 }
 
 .main > * {
-  border-top: 0.125rem solid floralwhite;
+  border-top: 0.125rem solid var(--accent-color);
   padding: 0 1rem;
 }
 
@@ -173,7 +195,7 @@ body {
 
 .footer {
   padding: 1rem;
-  background-image: linear-gradient(floralwhite, white);
+  background-image: linear-gradient(var(--accent-color), white);
 }
 
 .footer-text {
