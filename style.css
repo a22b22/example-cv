@@ -49,6 +49,7 @@ body {
   padding: 3rem 1rem;
   padding-top: 4rem;
   background-color: floralwhite;
+  background-image: linear-gradient(white, floralwhite);
   position: relative;
 }
 
@@ -143,7 +144,7 @@ body {
 }
 
 .main > * {
-  border-top: 0.125rem solid grey;
+  border-top: 0.125rem solid floralwhite;
   padding: 0 1rem;
 }
 
@@ -168,4 +169,13 @@ body {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer {
+  padding: 1rem;
+  background-image: linear-gradient(floralwhite, white);
+}
+
+.footer-text {
+  text-align: center;
 }
